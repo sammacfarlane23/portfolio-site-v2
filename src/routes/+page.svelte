@@ -1,3 +1,7 @@
+<script>
+  import portfolioPicture from '$lib/assets/portfolio_picture.jpg';
+</script>
+
 <section class="page-section hero">
   <div>
     <h1>Samuel MacFarlane</h1>
@@ -5,7 +9,7 @@
     <p>Introduction to me here...</p>
   </div>
   <img
-    src="https://avatars.githubusercontent.com/u/1234567?v=4"
+    src={portfolioPicture}
     alt="Samuel MacFarlane"
   />
 </section>
@@ -22,6 +26,7 @@
     height: 100vh;
   }
   .hero {
+    padding: 0 10rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,7 +34,7 @@
   }
   .hero img {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
   }
 </style>

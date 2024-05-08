@@ -30,7 +30,7 @@
     nav {
         position: fixed;
         top: 0;
-        padding: 1rem 0;
+        padding: 1rem;
         width: 100%;
         z-index: 1000;
         background-color: white;
@@ -38,7 +38,7 @@
 
     ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -61,9 +61,4 @@
         padding: 24px;
         min-height: 100vh;
     }
-    
-    h2 {
-        font-size: 12rem;
-    }
-
 </style>
