@@ -2,39 +2,15 @@
   import portfolioPicture from '$lib/assets/portfolio_picture.jpg';
 </script>
 
-<section class="page-section hero">
+<section class="flex items-center h-screen justify-around px-20">
   <div>
-    <h1>Samuel MacFarlane</h1>
-    <h2>Front-end<br />Engineer</h2>
+    <h1 class="text-2xl">Samuel MacFarlane</h1>
+    <h2 class="text-7xl font-bold mb-4">Front-end<br />Engineer</h2>
     <p>Introduction to me here...</p>
   </div>
   <img
+    class="rounded-full h-[300px]"
     src={portfolioPicture}
     alt="Samuel MacFarlane"
   />
 </section>
-
-<style>
-  h1 {
-    margin-bottom: 0;
-  }
-  h2 {
-    font-size: 4rem;
-    margin-top: 0;
-  }
-  .page-section {
-    height: 100vh;
-  }
-  .hero {
-    padding: 0 10rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80vh;
-  }
-  .hero img {
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-  }
-</style>
