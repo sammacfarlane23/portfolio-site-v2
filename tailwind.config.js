@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         navy: "#1c2e4a",
-        eggshell: "#F1E9DA",
+        ivory: "#F6F7EB",
+        grey: "#8491A3",
       },
     },
   },

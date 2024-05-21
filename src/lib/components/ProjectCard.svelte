@@ -1,20 +1,28 @@
 <script>
-  export let title;
-  export let description;
-  export let link;
-  export let imageSrc;
+	import DiGithubBadge from 'svelte-icons/di/DiGithubBadge.svelte';
+	import GoLinkExternal from 'svelte-icons/go/GoLinkExternal.svelte'
+	export let title;
+	export let description;
+	export let githubLink;
+	export let demoLink;
+	export let imageSrc;
 </script>
 
-<section class="bg-eggshell text-navy p-8 w-4/5 flex justify-around rounded-md">
-  <img src={imageSrc} alt={title} class="w-[150px] -mb-8" />
-  <div class='max-w-80'>
-    <h2 class="text-4xl font-bold mb-4">{title}</h2>
-    <p class="mb-4">{description}</p>
-    <button class="bg-navy text-white p-3 rounded-md w-20 mr-2">
-      <a href={link} target="_blank">GitHub</a>
-    </button>
-    <button class="bg-navy text-white p-3 rounded-md w-20">
-      <a href={link} target="_blank">Live</a>
-    </button>
-  </div>
+<section class="text-ivory w-80 flex flex-col justify-around rounded-lg">
+	<img src={imageSrc} alt={title} class="w-80 -mb-8 rounded-md" />
+	<div class="max-w-80 py-4 mt-8">
+		<h2 class="text-xl font-bold mb-2 text-ivory">{title}</h2>
+		<p class="mb-4 text-grey">{description}</p>
+    <!-- @TODO Add animations for these buttons -->
+		<button class="w-8 h-8 mr-2">
+			<a href={githubLink} target="_blank">
+				<DiGithubBadge />
+			</a>
+		</button>
+		<button class="w-8 h-8">
+			<a href={demoLink} target="_blank">
+				<GoLinkExternal />
+			</a>
+		</button>
+	</div>
 </section>
