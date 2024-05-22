@@ -7,6 +7,7 @@ export default {
         navy: "#1c2e4a",
         ivory: "#F6F7EB",
         grey: "#8491A3",
+        tomato: "#F55D3E",
       },
     },
   },
