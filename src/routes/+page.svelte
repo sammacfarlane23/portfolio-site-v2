@@ -5,24 +5,35 @@
 	import meditationImage from '$lib/assets/meditation_journal.png';
 	import FaChevronDown from 'svelte-icons/fa/FaChevronDown.svelte';
 	import { fade } from 'svelte/transition';
+	import Tabs from '$lib/components/Tabs.svelte';
 
 	let isExploreClicked = false;
+
+	let items = [
+		{ label: 'Canvas Reply', value: 1, title: 'Front-end Developer', date: 'Feb 2023 - Present' },
+		{ label: 'Chetwood Financial', value: 2, title: 'Front-end Engineer', date: 'Nov 2020 - Feb 2023' },
+	];
 </script>
 
-<section class="px-20 text-center h-screen text-ivory">
-	<div class="flex items-center h-[80vh] justify-around text-justify">
-		<div>
+<section class="text-center px-20 h-screen text-ivory">
+	<div class="flex items-center justify-between h-[80vh] text-justify">
+		<div class="max-w-[450px]">
 			<h1 class="text-2xl text-grey">Samuel MacFarlane</h1>
 			<h2 class="text-7xl font-bold mb-4">
 				<span class="text-tomato">Front</span>end<br />Engineer
 			</h2>
-			<p>Introduction to me here...</p>
+			<!-- @TODO: Make this a bit less AI-y -->
+			<p>
+				I love bringing ideas to life with React and TypeScript, creating seamless and engaging
+				digital experiences. Passionate about intuitive design and innovative solutions, I’m
+				dedicated to crafting user-friendly web applications.
+			</p>
 		</div>
 		<img class="rounded-full h-[300px]" src={portfolioPicture} alt="Samuel MacFarlane" />
 	</div>
 	{#if !isExploreClicked}
 		<button
-			class="bg-navy text-ivory px-4 py-2 rounded-lg mt-4 animate-bounce"
+			class="bg-navy text-ivory px-4 py-2 -mt-48 rounded-lg animate-bounce"
 			on:click={() => {
 				isExploreClicked = true;
 			}}
@@ -42,7 +53,6 @@
 	<h2 class="text-4xl mt-6 mb-14 font-bold" id="projects">
 		Personal Projects<span class="text-tomato">.</span>
 	</h2>
-	<!-- <h3 class="mb-8">These are the personal projects I'm most proud of</h3> -->
 
 	<div class="flex justify-between w-full">
 		<ProjectCard
@@ -69,5 +79,9 @@
 </section>
 
 <section class="w-100 text-ivory h-screen">
-	<h2 class="text-4xl mt-6 mb-14 font-bold">Experience<span class="text-tomato">.</span></h2>
+	<h2 class="text-4xl mt-6 mb-14 font-bold" id="experience">
+		Experience<span class="text-tomato">.</span>
+	</h2>
+
+  <Tabs {items} />
 </section>
