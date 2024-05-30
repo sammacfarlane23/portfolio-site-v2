@@ -1,5 +1,8 @@
 <script lang="ts">
 	import '../app.css';
+
+	export const prerender = true;
+	export const trailingSlash = 'always';
 </script>
 
 <nav class="sm:px-48 py-10 z-10 bg-navy w-full flex justify-between">
