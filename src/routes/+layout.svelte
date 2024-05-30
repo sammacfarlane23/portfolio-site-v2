@@ -2,7 +2,7 @@
 	import '../app.css';
 </script>
 
-<nav class="px-48 py-10 z-10 bg-navy w-full flex justify-between">
+<nav class="sm:px-48 py-10 z-10 bg-navy w-full flex justify-between">
 	<a href="/" class="text-ivory"> *LOGO HERE* </a>
 	<ul class="flex justify-around w-1/2 text-ivory">
 		<li class="hover:text-grey">
@@ -20,7 +20,7 @@
 	</ul>
 </nav>
 
-<div class="bg-navy text-white py-8 px-48">
+<div class="bg-navy text-white py-8 px-8 sm:px-32">
 	<slot />
 </div>
 

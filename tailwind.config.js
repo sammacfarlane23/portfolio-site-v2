@@ -8,6 +8,7 @@ export default {
         ivory: "#F6F7EB",
         grey: "#8491A3",
         tomato: "#F55D3E",
+        'robin-egg-blue': "#59C3C3"
       },
     },
   },

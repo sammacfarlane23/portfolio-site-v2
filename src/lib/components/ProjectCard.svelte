@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	import DiGithubBadge from 'svelte-icons/di/DiGithubBadge.svelte';
 	import GoLinkExternal from 'svelte-icons/go/GoLinkExternal.svelte';
 	import { onMount } from 'svelte';
@@ -34,8 +34,9 @@
       )
     `;
 
+	// @TODO: Fix glow
 		glow.style.backgroundImage = `
-    radial-gradient(
+		radial-gradient(
       circle at
       ${center.x * 2 + bounds.width / 2}px
       ${center.y * 2 + bounds.height / 2}px,
@@ -75,13 +76,13 @@
 	<div class="max-w-80 py-4 mt-8">
 		<h2 class="text-xl font-bold mb-2 text-ivory">{title}</h2>
 		<p class="mb-4 text-grey">{description}</p>
-		<button class="w-8 h-8 mr-2 hover:text-tomato">
+		<button class="w-8 h-8 mr-2 hover:text-robin-egg-blue">
 			<a href={githubLink} target="_blank">
 				<DiGithubBadge />
 			</a>
 		</button>
 		{#if demoLink}
-			<button class="w-8 h-8 hover:text-tomato">
+			<button class="w-8 h-8 hover:text-robin-egg-blue">
 				<a href={demoLink} target="_blank">
 					<GoLinkExternal />
 				</a>
