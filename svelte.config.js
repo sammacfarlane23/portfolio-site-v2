@@ -15,8 +15,8 @@ const config = {
 			strict: false
 		}),
 		paths: {
-     base: process.env.NODE_ENV === "production" ? "/portfolio-site-v2" : "",
-   }
+			base: process.env.NODE_ENV === "production" ? "/portfolio-site-v2" : "",
+		}
 	}
 };
 
