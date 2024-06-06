@@ -103,7 +103,7 @@
 	</div>
 </section>
 
-<section class="w-100 text-ivory h-screen sm:h-full">
+<section class="w-100 text-ivory h-screen sm:h-screen">
 	<h2 class="text-4xl mt-6 mb-14 font-bold" id="experience">
 		Experience<span class="text-robin-egg-blue">.</span>
 	</h2>
