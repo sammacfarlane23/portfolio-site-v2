@@ -1,29 +1,20 @@
 <script lang="ts">
 	import '../app.css';
+	import Header from '$lib/components/Header.svelte';
 	import DiGithubBadge from 'svelte-icons/di/DiGithubBadge.svelte';
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 
 	export const prerender = true;
 	export const trailingSlash = 'always';
+
+	let isMenuOpen = false;
+	
+	function toggleMenu() {
+		isMenuOpen = !isMenuOpen;
+	}
 </script>
 
-<nav class="sm:px-48 py-10 z-10 bg-navy w-full flex flex-col sm:flex-row justify-between">
-	<a href="/" class="text-ivory font-bold"> *LOGO HERE* </a>
-	<ul class="flex flex-col sm:flex-row justify-around w-1/2 text-ivory font-bold text-lg">
-		<li class="hover:text-grey">
-			<a href="/#projects"> Projects </a>
-		</li>
-		<li class="hover:text-grey">
-			<a href="/#experience"> Experience </a>
-		</li>
-		<li class="hover:text-grey">
-			<a href="/blog"> Blog </a>
-		</li>
-		<li class="hover:text-grey">
-			<a href="/contact"> Contact </a>
-		</li>
-	</ul>
-</nav>
+<Header />
 
 <div class="bg-navy text-white py-8 px-8 sm:px-32">
 	<slot />

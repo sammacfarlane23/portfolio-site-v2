@@ -39,8 +39,8 @@
 
 				<ul class="list-none w-full">
 					{#each item.bullets as bullet}
-						<li class="text-sm flex mb-4">
-							<div class="w-8 mr-4 text-robin-egg-blue"><MdCheck /></div>
+						<li class="text-sm flex mb-4 gap-x-4">
+							<div class="w-6 shrink-0 text-robin-egg-blue"><MdCheck /></div>
 							<span class="max-w-[450px]">{bullet}</span>
 						</li>
 					{/each}

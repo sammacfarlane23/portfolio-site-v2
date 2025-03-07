@@ -41,8 +41,8 @@
 </script>
 
 <section class="text-center px-20 h-screen text-ivory">
-	<div class="flex flex-col sm:flex-row-reverse items-center justify-between h-[80vh] text-justify">
-		<img class="rounded-full w-[300px] max-w-none" src={portfolioPicture} alt="Samuel MacFarlane" />
+	<div class="flex flex-col sm:flex-row-reverse items-center sm:justify-between h-[80vh] text-justify">
+		<img class="rounded-full sm:w-[300px] w-[200px] max-w-none max-sm:mb-16" src={portfolioPicture} alt="Samuel MacFarlane" />
 		<div class="max-w-[450px]">
 			<h1 class="text-2xl text-grey">Samuel MacFarlane</h1>
 			<h2 class="text-7xl font-bold mb-4">
@@ -79,7 +79,7 @@
 		Personal Projects<span class="text-robin-egg-blue">.</span>
 	</h2>
 
-	<div class="flex flex-col items-center sm:flex-row justify-between w-full">
+	<div class="flex flex-col items-center sm:flex-row gap-y-10 justify-between w-full">
 		<ProjectCard
 			title="Spotify Assistant"
 			description="Merge your playlists and view your top tracks and artists in one place. Built with React, and the Spotify API."
@@ -97,7 +97,7 @@
 		<ProjectCard
 			title="Portfolio website & blog"
 			description="This is my portfolio website, built with SvelteKit and Tailwind CSS. It's a work in progress, but I'm proud of it so far!"
-			githubLink="https://github.com/sammacfarlane23/react-native-meditation-app"
+			githubLink="https://github.com/sammacfarlane23/portfolio-site-v2"
 			imageSrc="https://placehold.co/320"
 		/>
 	</div>

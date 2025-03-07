@@ -63,7 +63,7 @@
 	});
 </script>
 
-<section class="text-ivory w-80 flex flex-col justify-around rounded-lg">
+<section class="text-ivory w-80 flex flex-col justify-around rounded-3xl">
 	<a
 		href={demoLink ? demoLink : githubLink}
 		target="_blank"
